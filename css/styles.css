@@ -1,0 +1,385 @@
+:root{
+    --cor-primaria: #051b84;  
+    --cor-secundaria: #b50e0e;
+    --cor-borda: #010c44;
+    --cor-menu: #b2b2b2;
+    --cor-branca: #ffffff;
+    --cor-preta: #000000;
+    --cor-texto: #1d1d1d;
+    --cor-fundo: #f5f5f5;
+}
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+/*força o layout a ocupar toda a página*/
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+main {
+    flex: 1;
+}
+
+.barra-superior {
+    background-color: var(--cor-borda);
+    color: var(--cor-branca);
+    /*border-bottom: 1px solid var(--cor-secundaria); linha vermelha barra superior*/
+    height: 40px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+}
+
+.cidade {
+    font-weight: bold;
+}
+
+.barra-links {
+    display: flex;
+    gap: 20px;
+}
+
+.barra-links a {
+    color: var(--cor-branca);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.barra-links a:hover {
+    text-decoration: underline;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: var(--cor-primaria);
+    /*border-bottom: 3px solid var(--cor-borda);*/
+    gap: 30px;
+}
+
+.top-bar input[type="text"] {
+    width: 50%;
+    padding: 8px;
+    font-size: 16px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 30px;
+    color: var(--cor-secundaria);
+    font-weight: bold;
+    text-shadow: /*serve para dar contorno a palavra*/
+        -1px -1px 0 var(--cor-branca),
+        1px -1px 0 var(--cor-branca),
+        -1px 1px 0 var(--cor-branca),
+        1px 1px 0 var(--cor-branca);
+}
+ /*tamanho logo loja*/
+.logo-img {
+    height: 70px;
+    width: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.busca {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    max-width: 700px; /*aumenta o espaço total da busca*/
+}
+
+.busca input[type="text"] {
+    flex: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px 0 0 4px;
+    min-width: 300px; /*define o tamanho mínimo da busca*/
+}
+
+.busca button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #8e8e8e; /*mudar a cor*/
+    color: #000;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.busca button:hover {
+    background-color: #565656;
+}
+
+.icons a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.menu {
+    background-color: var(--cor-branca);
+    border-bottom: 3px solid var(--cor-borda);
+    padding: 10px 20px;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center; /*centraliza o menu de opções*/
+    flex-wrap: wrap;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu a {
+    color: var(--cor-texto);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3 ease;
+}
+
+/*estilização da barra menu*/
+.menu a:hover {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+}
+
+.menu a.active {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+}
+
+.container {
+    width: 700px;
+    max-width: 100%;
+    padding: 0 16px;
+    margin: 0 auto;
+}
+
+.mt-2 {
+    margin-top: 24px;
+}
+
+.caixa {
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background: var(--cor-fundo);
+    box-shadow: 0 2px 4px #00004d;
+}
+
+
+ /* rodapé */
+.footer {
+    background-color: var(--cor-primaria);
+    color: var(--cor-branca);
+    padding: 24px 16px;
+    border-top: 3px solid var(--cor-borda);
+    margin-top: 32px;
+    text-align: left;
+    grid-column: 1/-1;
+}
+
+.footer a {
+    color: var(--cor-secundaria);;
+}
+
+/* tabela contato */
+
+.formulario-contato {
+    background-color: var(--cor-branca);
+    padding: 24px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.formulario-contato fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.formulario-contato legend {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    color: var(--cor-borda);
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: var(--cor-texto);
+}
+
+.campo input,
+.campo textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid var(--cor-menu);
+    border-radius: 4px;
+}
+
+.formulario-contato button {
+    align-self: flex-start;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: var(--cor-primaria);
+  color: var(--cor-branca);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.formulario-contato button:hover {
+    background-color: var(--cor-borda);
+}
+
+/* texto sobre */
+
+.sobre h2 {
+    font-size: 28px;
+    margin-bottom: 24px;
+    color: var(--cor-texto);
+    text-align: center;
+}
+
+.sobre section{
+    margin-bottom: 32px;
+}
+
+.sobre h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: var(--cor-texto);
+}
+
+.sobre p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--cor-texto);
+    background-color: var(--cor-branca);
+    padding: 16px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* media queries, para adaptar o site de acordo com o tamanho */
+
+/* == para telas de até 1024px == */
+@media (max-width: 1024px) {
+    .container {
+        width: 90%;
+    }
+
+    .logo h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    .caixa {
+        font-size: 0.9rem;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .top-bar {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+    }
+
+    .icons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+}
+
+/* == para telas até 768px == */
+@media (max-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 0 12px;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .logo h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .busca {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .busca input[type="text"],
+  .busca button {
+    width: 100%;
+    border-radius: 4px;
+  }
+
+  .icons {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .caixa {
+    padding: 16px;
+    font-size: 1rem;
+  }
+
+  .footer {
+    text-align: center;
+  }
+}
