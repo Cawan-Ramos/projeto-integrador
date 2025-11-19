@@ -1,51 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Casa Ramos: Elétrica e Ferragens</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <script src="js/componentes.js" defer></script>
 </head>
 
 <body>
-    <header id="topo" class="header">
-        <!-- barra superior -->
-        <div class="barra-superior">
-            <div class="cidade">Riacho Fundo I</div>
-                <nav class="barra-links">
-                    <a href="contato.html">Contato</a>
-                    <a href="sobre.html">Sobre a loja</a> 
-                </nav>
-        </div>
-
-        <!-- cabeçalho principal -->
-        <div class="top-bar">
-            <div class="logo"> 
-                <a href="index.html">
-                    <img src="img/logo-casa-ramos.png" alt="Logo Casa Ramos" class="logo-img">
-                </a>
-            </div>
-
-            <form class="busca" action="#" method="get"> 
-                <input type="text" name="q" placeholder="Buscar produtos">
-                <button type="submit"> 🔍 </button>
-            </form>
-            
-            <div class="icons">
-                <a href="#"><span>❤️ Lista de desejos</span></a>
-                <a href="#"><span>👤 Entre ou Faça Login</span></a>
-            </div>
-        </div>
-        <nav class="menu">
-            <ul>
-                <li><a href="index.html"> INÍCIO </a></li>
-                <li><a href="ferramentas.html"> FERRAMENTAS GERAIS </a></li>
-                <li><a href="eletrica.html"> ELÉTRICA </a></li>
-                <li><a href="encanamento.html"> ENCANAMENTOS E HIDRÁULICAS </a></li>
-                <li><a href="churrasqueira.html"> CHURRASQUEIRAS E ACESSÓRIOS </a></li>
-            </ul>
-        </nav>
-    </header>
+    <div id="topo"></span>
+    <!-- cabeçalho via JS -->
+    <div id="header-container"></div>
 
     <main class="container">
         <h2> Fale com a gente </h2>
@@ -69,19 +35,22 @@
                 <button type="submit"> Enviar </button>
             </fieldset>
         </form>
+
+        <section class="localizacao">
+            <h2> Onde estamos </h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3837.495550212852!2d-48.017554025761186!3d-15.883088725143443!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a2dcc6938c4a1%3A0x2a7f26b85795ebf6!2sCasa%20Ramos!5e0!3m2!1spt-BR!2sbr!4v1763416070338!5m2!1spt-BR!2sbr" 
+                    width="600" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
     </main>
 
-    <footer class="footer">
-        <div class="container">
-            <address>
-                <p> Endereço: Riacho Fundo, Rua 00 - Brasília-DF </p>
-                <p> Email: <a href="mailto:contato@casaramos.com"> contato@casaramos.com</a> </p>
-                <p> Telefone: <a href="tel:+556199999999"> (61) 9999-9999 </a> </p>
-            </address>    
-            <p class="mt-2">
-            &COPY; 2025 Casa Ramos. Todos os direitos reservados. - 
-            <a href="index.html"> Voltar ao início </a></p>
-        </div>        
-    </footer>
+    <!-- footer via JS -->
+    <div id="footer-container"></div>
+    
 </body>
 </html>
