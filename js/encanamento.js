@@ -1,40 +1,34 @@
 document.addEventListener("DOMContentLoaded", function(){
     const produtos = [
     {
-        nome: "Produto",
-        preco: "R$ 00,00",
-        descricao: "Descrição*", 
-        img: ""
+        nome: "Cola Cano PVC",
+        preco: "R$ 10,00",
+        img: "img/encanamento/cola-cano.png"
     },
     {
-        nome: "Produto",
-        preco: "R$ 00,00",
-        descricao: "Descrição*", 
-        img: ""
+        nome: "Fita Veda Rosca",
+        preco: "R$ 4,00",
+        img: "img/encanamento/fita-veda-rosca.png"
     },
     {
-        nome: "Produto",
-        preco: "R$ 00,00",
-        descricao: "Descrição*", 
-        img: ""
+        nome: "Joelho Soldavel 25mm",
+        preco: "R$ 2,50",
+        img: "img/encanamento/joelho25.jfif"
     },
     {
-        nome: "Produto",
-        preco: "R$ 00,00",
-        descricao: "Descrição*", 
-        img: ""
+        nome: "Luva Soldavel 25mm",
+        preco: "R$ 3,00",
+        img: "img/encanamento/luva25.jfif"
     },
     {
-        nome: "Produto",
-        preco: "R$ 00,00",
-        descricao: "Descrição*", 
-        img: ""
+        nome: "Barra de Cano 25mm",
+        preco: "R$ 24,00",
+        img: "img/encanamento/tubo-pvc25.jfif"
     },
     {
-        nome: "Produto",
-        preco: "R$ 00,00",
-        descricao: "Descrição*", 
-        img: ""
+        nome: "Barra de Cano 75mm",
+        preco: "R$ 70,00",
+        img: "img/encanamento/tubo-pvc75.jfif"
     }
     ];
 
@@ -45,7 +39,6 @@ document.addEventListener("DOMContentLoaded", function(){
                 <img src="${produto.img}" alt="${produto.nome}">
                 <h3>${produto.nome}</h3>
                 <p class="preco">${produto.preco}</p>
-                <p>${produto.descricao}</p>
                 <button>Ver mais</button>
             </div>
         `).join('');

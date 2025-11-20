@@ -1,40 +1,34 @@
 document.addEventListener("DOMContentLoaded", function(){
     const produtos = [
     {
-        nome: "Produto",
-        preco: "R$ 00,00",
-        descricao: "Descrição*", 
-        img: ""
+        nome: "Extensão Elétrica",
+        preco: "R$ 40,00",
+        img: "img/eletrica/extensão.jfif"
     },
     {
-        nome: "Produto",
-        preco: "R$ 00,00",
-        descricao: "Descrição*", 
-        img: ""
+        nome: "Interruptor Simples",
+        preco: "R$ 10,00",
+        img: "img/eletrica/interruptor-simples.jpg"
     },
     {
-        nome: "Produto",
-        preco: "R$ 00,00",
-        descricao: "Descrição*", 
-        img: ""
+        nome: "Lâmpada de Led",
+        preco: "R$ 8,00",
+        img: "img/eletrica/lampada-12w.jfif"
     },
     {
-        nome: "Produto",
-        preco: "R$ 00,00",
-        descricao: "Descrição*", 
-        img: ""
+        nome: "Luminária de Embutir",
+        preco: "R$ 25,00",
+        img: "img/eletrica/luminaria-embutir.jfif"
     },
     {
-        nome: "Produto",
-        preco: "R$ 00,00",
-        descricao: "Descrição*", 
-        img: ""
+        nome: "Luminária de Sobrepor",
+        preco: "R$ 25,00",
+        img: "img/eletrica/luminaria-sobrepor.jfif"
     },
     {
-        nome: "Produto",
-        preco: "R$ 00,00",
-        descricao: "Descrição*", 
-        img: ""
+        nome: "Tomada Dupla",
+        preco: "R$ 12,00", 
+        img: "img/eletrica/tomada-dupla.jfif"
     }
     ];
 
@@ -45,7 +39,6 @@ document.addEventListener("DOMContentLoaded", function(){
                 <img src="${produto.img}" alt="${produto.nome}">
                 <h3>${produto.nome}</h3>
                 <p class="preco">${produto.preco}</p>
-                <p>${produto.descricao}</p>
                 <button>Ver mais</button>
             </div>
         `).join('');

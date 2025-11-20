@@ -406,7 +406,6 @@ main {
 .produto-card button:hover {
     background-color: var(--cor-secundaria);
 }
-
 /* media queries, para adaptar o site de acordo com o tamanho */
 
 @media (min-width: 1280px) {
